@@ -24,7 +24,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'home tv',
+          'photo Gallery App',
           style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
@@ -48,13 +48,13 @@ class _HomeState extends State<Home> {
           );
         },
       ),
-      floatingActionButton: FloatingActionButton.extended(
-          onPressed: () {
-            // Navigator.push(context,
-            //     MaterialPageRoute(builder: (context) => const new_page_add()));
-          },
-          icon: const Icon(Icons.icecream),
-          label: const Text('add me')),
+      // floatingActionButton: FloatingActionButton.extended(
+      //     onPressed: () {
+      //       // Navigator.push(context,
+      //       //     MaterialPageRoute(builder: (context) => const new_page_add()));
+      //     },
+      //     icon: const Icon(Icons.icecream),
+      //     label: const Text('add me')),
     );
   }
 
@@ -74,7 +74,7 @@ class _HomeState extends State<Home> {
         for(var item in decodedata ){
          Product ppp=Product(
              // albumId:item[albumId],
-             // id:item[id],
+             //  id:item['id'],
              title:item['title'],
              url:item['url'],
              thumbnailUrl:item['thumbnailUrl']);

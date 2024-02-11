@@ -1,6 +1,8 @@
+import 'dart:ffi';
+
 class Product{
   int? albumId;
-  int? id;
+  String? id;
   String? title;
   String? url;
   String? thumbnailUrl;

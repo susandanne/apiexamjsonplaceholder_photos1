@@ -13,7 +13,7 @@ class Myapp extends StatelessWidget {
       theme: ThemeData(
         appBarTheme: AppBarTheme(
           backgroundColor: Colors.amber,
-          foregroundColor: Colors.red
+          foregroundColor: Colors.white
         )
       ),
     );
